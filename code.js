@@ -1310,7 +1310,8 @@ run = 0; // increment this value from 0-59
 // after incrementing 'n', save the file and RELOAD the extension in chrome://extensions
 // then relaunch the test
 // remember after the last question you need to click on Submit yourself 
-cnt = set[run].a.filter(el => el.f == true).length;
+// delete from 'START MANIPULATING' to 'END MANIPULATING' if you want to submit the preset answers as is
+cnt = set[run].a.filter(el => el.f == true).length; //START MANIPULATING
 notSwapped = true;
 if (cnt == 1) {
     set[run].a.forEach(el => {
@@ -1331,7 +1332,7 @@ if (cnt == 1) {
             swapCnt += 1;
         }
     });
-}
+}//END MANIPULATING
 $(document).ready(function () {
     setTimeout(() => {
         let q = document.getElementsByTagName('iframe')[0].contentDocument.body.querySelector("div.quiz-question-panel>span").innerHTML.trim();
