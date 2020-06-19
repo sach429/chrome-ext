@@ -1305,7 +1305,7 @@ set = [
         ]
     }
 ];
-manipulateAnswers();
+// manipulateAnswers(); // uncomment to manipulate
 $(document).ready(function () {
     setTimeout(() => {
         let q = document.getElementsByTagName('iframe')[0].contentDocument.body.querySelector("div.quiz-question-panel>span").innerHTML.trim();
@@ -1363,7 +1363,7 @@ $(document).ready(function () {
 
 
 function manipulateAnswers() {
-    run = 0; // increment this value from 0-59
+    run = 0; // change this value from 0-59, numer signifies which question to manipulate
     // the baseline score is 97%.
     // after incrementing 'n', save the file and RELOAD the extension in chrome://extensions
     // then relaunch the test
