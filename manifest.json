@@ -1,0 +1,14 @@
+{
+    "name": "SAFE 4 PRACTICE TEST",
+    "version": "1.0",
+    "description": "Auto submit practice test",
+    "background": {
+      "scripts": ["background.js"],
+      "persistent": false
+    },
+    "permissions": ["declarativeContent", "storage","tabs",
+        "notifications",
+        "http://*/",
+        "https://*/"],
+    "manifest_version": 2
+  }
