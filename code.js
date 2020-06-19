@@ -269,11 +269,11 @@ set = [
         "a": [
             {
                 "a": "Intentional",
-                "f": true
+                "f": false
             },
             {
                 "a": "Micro-service",
-                "f": false
+                "f": true
             },
             {
                 "a": "Monolithic",
